@@ -34,7 +34,7 @@ if (window.location.pathname.includes('result.html')) {
         try {
             const response = await fetch('http://127.0.0.1:5500/api/check-eligibility', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json','Cache-Control': 'no-cache' },
                 body: JSON.stringify(profile)
             });
             
