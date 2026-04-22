@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yojna.ai - Results</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <div class="loading" id="loadingSection">
+    <div class="spinner"></div>
+    <p class="body" style="margin-top: 1.5rem;">Analyzing your eligibility...</p>
+  </div>
+
+  <section class="inverted section dot-pattern" id="resultSection" style="display: none;">
+    <div class="container">
+      <div class="result-section">
+        <div style="text-align: center; max-width: 48rem; margin: 0 auto;">
+          <div class="section-label" style="margin-bottom: 2rem; justify-content: center;">
+            <span class="dot"></span>
+            <span>Eligibility Results</span>
+          </div>
+          <h2 class="h1 gradient-text" style="margin-bottom: 1rem;">Your Personalized Benefits</h2>
+          <p class="body" style="margin-bottom: 3rem; max-width: 32rem; margin-left: auto; margin-right: auto;">Based on your profile, here are the government schemes you may be eligible for. These results are personalized and may vary based on additional criteria.</p>
+
+          <!-- Results Container for Backend Data -->
+          <div id="resultsContainer" class="results-container">
+            <!-- Results will be dynamically populated here -->
+            <div class="loading-results">
+              <div class="spinner" style="width: 40px; height: 40px; margin: 0 auto 1rem;"></div>
+              <p class="body">Loading your personalized results...</p>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <button class="btn btn-primary" onclick="window.location.href='index.html'" style="margin-right: 1rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
+                <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Check for New Profile
+            </button>
+            <button class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 0.5rem;">
+                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Download Full Report
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
