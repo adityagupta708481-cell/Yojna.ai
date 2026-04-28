@@ -34,4 +34,4 @@ def check_eligibility():
         return jsonify({"error": "Failed to process request", "details": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5500)
